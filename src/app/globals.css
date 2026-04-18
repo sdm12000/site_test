@@ -1,0 +1,112 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background:       oklch(0.97 0.01 230);
+  --color-background-alt:   oklch(0.95 0.02 230);
+  --color-surface:          oklch(0.99 0.005 60);
+  --color-foreground:       oklch(0.18 0.03 250);
+  --color-foreground-muted: oklch(0.45 0.02 250);
+  --color-border:           oklch(0.88 0.02 230);
+  --color-accent:           oklch(0.55 0.15 230);
+  --color-accent-light:     oklch(0.70 0.10 230);
+  --color-accent-dark:      oklch(0.40 0.15 230);
+  --color-secondary:        oklch(0.75 0.08 300);
+  --color-secondary-light:  oklch(0.90 0.05 300);
+
+  --font-display: "Noto Serif KR", "Playfair Display", serif;
+  --font-body: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+/* ----------------------------------------------------------------
+   Base
+   ---------------------------------------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ----------------------------------------------------------------
+   Typography helpers
+   ---------------------------------------------------------------- */
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* ----------------------------------------------------------------
+   Sparkle animation (used by hero decorations)
+   ---------------------------------------------------------------- */
+@keyframes sparkle-pulse {
+  0%, 100% { opacity: 0; transform: scale(0.5); }
+  50% { opacity: 0.6; transform: scale(1); }
+}
+
+.animate-sparkle {
+  animation: sparkle-pulse 4s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------------
+   Floating animation for decorative elements
+   ---------------------------------------------------------------- */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-12px); }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+}
+
+.animate-float-slow {
+  animation: float-slow 8s ease-in-out infinite;
+}
+
+/* ----------------------------------------------------------------
+   Selection colour
+   ---------------------------------------------------------------- */
+::selection {
+  background-color: oklch(0.55 0.15 230 / 0.2);
+  color: oklch(0.18 0.03 250);
+}
+
+/* ----------------------------------------------------------------
+   Scrollbar (subtle)
+   ---------------------------------------------------------------- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.80 0.02 230);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: oklch(0.65 0.05 230);
+}
+
+/* ----------------------------------------------------------------
+   Section divider gradient
+   ---------------------------------------------------------------- */
+.section-gradient-blue {
+  background: linear-gradient(180deg,
+    oklch(0.97 0.01 230) 0%,
+    oklch(0.93 0.03 230) 50%,
+    oklch(0.96 0.02 230) 100%
+  );
+}
