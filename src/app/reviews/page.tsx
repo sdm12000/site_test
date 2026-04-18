@@ -11,7 +11,7 @@ export default function ReviewsPage() {
         badge="Class Review"
         title="Step-Up과 함께한 사람들의 이야기"
         description="실제 수강생들의 생생한 후기를 확인해보세요."
-        gradient="from-[#fdd8d0] via-[#fde2d4] to-[#c7d2fe]"
+        backgroundImage="/images/reviews-bg.webp"
       />
       <ReviewsSection hideHeader />
       <CtaSection />

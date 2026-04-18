@@ -39,14 +39,17 @@ export function Header() {
         className={cn(
           "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
           scrolled
-            ? "bg-white/80 backdrop-blur-xl shadow-sm border-b border-border/50"
+            ? "bg-white/95 backdrop-blur-xl shadow-sm border-b border-border/50"
             : "bg-transparent",
         )}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link
             href="/"
-            className="font-display text-xl font-bold tracking-tight text-foreground"
+            className={cn(
+              "font-display text-xl font-bold tracking-tight transition-colors duration-500",
+              scrolled ? "text-foreground" : "text-white",
+            )}
           >
             Step-Up
           </Link>
@@ -57,10 +60,14 @@ export function Header() {
                 key={link.href}
                 href={link.href}
                 className={cn(
-                  "text-sm font-medium transition-colors hover:text-accent",
-                  pathname === link.href
-                    ? "text-accent"
-                    : "text-foreground-muted",
+                  "text-sm font-medium transition-colors duration-500",
+                  scrolled
+                    ? pathname === link.href
+                      ? "text-accent"
+                      : "text-foreground-muted hover:text-accent"
+                    : pathname === link.href
+                      ? "text-white"
+                      : "text-white/80 hover:text-white",
                 )}
               >
                 {link.label}
@@ -68,7 +75,12 @@ export function Header() {
             ))}
             <Link
               href="/reviews"
-              className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-all hover:bg-accent-dark hover:shadow-lg"
+              className={cn(
+                "rounded-full px-5 py-2 text-sm font-medium transition-all",
+                scrolled
+                  ? "bg-accent text-white hover:bg-accent-dark hover:shadow-lg"
+                  : "bg-white/20 text-white backdrop-blur-sm border border-white/30 hover:bg-white/30",
+              )}
             >
               상담 신청
             </Link>
@@ -76,7 +88,10 @@ export function Header() {
 
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            className="md:hidden text-foreground p-2"
+            className={cn(
+              "md:hidden p-2 transition-colors duration-500",
+              scrolled ? "text-foreground" : "text-white",
+            )}
             aria-label="메뉴"
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}

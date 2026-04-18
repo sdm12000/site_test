@@ -7,6 +7,7 @@ interface PageHeroProps {
   title: string;
   description?: string;
   gradient?: string;
+  backgroundImage?: string;
 }
 
 export function PageHero({
@@ -14,18 +15,35 @@ export function PageHero({
   title,
   description,
   gradient = "from-[#c7d2fe] via-[#e0d4f7] to-[#fdd8d0]",
+  backgroundImage,
 }: PageHeroProps) {
-  return (
-    <section className={`relative pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br ${gradient} overflow-hidden`}>
-      {/* Subtle glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-white/20 blur-[100px] pointer-events-none" />
+  const hasImage = !!backgroundImage;
 
-      <div className="relative mx-auto max-w-4xl px-6 text-center">
+  return (
+    <section
+      className={`relative overflow-hidden ${
+        hasImage
+          ? "min-h-[50vh] md:min-h-[60vh] flex items-end bg-cover bg-center pb-16 md:pb-20"
+          : `pt-32 pb-16 md:pt-40 md:pb-20 bg-gradient-to-br ${gradient}`
+      }`}
+      style={hasImage ? { backgroundImage: `url('${backgroundImage}')` } : undefined}
+    >
+      {hasImage ? (
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1e1b4b]/75 via-[#312e81]/65 to-[#7c2d12]/55" />
+      ) : (
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-white/20 blur-[100px] pointer-events-none" />
+      )}
+
+      <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
         <motion.span
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-block rounded-full bg-white/40 backdrop-blur-sm px-4 py-1.5 text-sm font-medium text-foreground/70 tracking-wide"
+          className={`inline-block rounded-full backdrop-blur-sm px-4 py-1.5 text-sm font-medium tracking-wide ${
+            hasImage
+              ? "bg-white/20 text-white/90"
+              : "bg-white/40 text-foreground/70"
+          }`}
         >
           {badge}
         </motion.span>
@@ -34,7 +52,9 @@ export function PageHero({
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.15 }}
-          className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-foreground"
+          className={`mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight ${
+            hasImage ? "text-white" : "text-foreground"
+          }`}
         >
           {title}
         </motion.h1>
@@ -44,7 +64,9 @@ export function PageHero({
             initial={{ opacity: 0, y: 15 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="mt-5 text-lg text-foreground-muted max-w-2xl mx-auto leading-relaxed"
+            className={`mt-5 text-lg max-w-2xl mx-auto leading-relaxed ${
+              hasImage ? "text-white/80" : "text-foreground-muted"
+            }`}
           >
             {description}
           </motion.p>

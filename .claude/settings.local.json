@@ -23,7 +23,30 @@
       "WebFetch(domain:localhost)",
       "Bash(curl -s http://localhost:3000)",
       "Bash(start http://localhost:3000)",
-      "Bash(cmd.exe /c start http://localhost:3000)"
+      "Bash(cmd.exe /c start http://localhost:3000)",
+      "Bash(curl -L -o public/images/hero-bg.jpg \"https://picsum.photos/id/180/1920/1080\")",
+      "Bash(curl -L -o public/images/cta-bg.jpg \"https://picsum.photos/id/367/1920/1080\")",
+      "Bash(curl -L -o public/images/about-bg.jpg \"https://picsum.photos/id/48/1920/1080\")",
+      "Bash(curl -L -o public/images/program-bg.jpg \"https://picsum.photos/id/20/1920/1080\")",
+      "Bash(curl -L -o public/images/vision-bg.jpg \"https://picsum.photos/id/201/1920/1080\")",
+      "Bash(curl -L -o public/images/ai-bg.jpg \"https://picsum.photos/id/0/1920/1080\")",
+      "Bash(curl -L -o public/images/instructors-bg.jpg \"https://picsum.photos/id/433/1920/1080\")",
+      "Bash(curl -L -o public/images/reviews-bg.jpg \"https://picsum.photos/id/399/1920/1080\")",
+      "Bash(curl -L -o hero-bg.jpg \"https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(curl -L -o about-bg.jpg \"https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(curl -L -o program-bg.jpg \"https://images.unsplash.com/photo-1552664730-d307ca884978?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(curl -L -o ai-bg.jpg \"https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(curl -L -o instructors-bg.jpg \"https://images.unsplash.com/photo-1531482615713-2afd69097998?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(curl -L -o reviews-bg.jpg \"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(curl -L -o cta-bg.jpg \"https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=1920&h=1080&fit=crop&q=80\")",
+      "Bash(npx --yes sharp-cli --version)",
+      "Bash(node -e \"try { require\\('sharp'\\); console.log\\('sharp-available'\\); } catch\\(e\\) { console.log\\('no-sharp'\\); }\")",
+      "Bash(node -e ' *)",
+      "Bash(curl *)",
+      "Bash(taskkill //F //IM node.exe)",
+      "Bash(tasklist)",
+      "Bash(netstat -ano)",
+      "Bash(taskkill *)"
     ]
   }
 }

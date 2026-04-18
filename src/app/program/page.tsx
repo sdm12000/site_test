@@ -13,7 +13,7 @@ export default function ProgramPage() {
         badge="Step-Up Project"
         title="작은 전진이 만드는 큰 변화"
         description="인문학 기반의 AI 교육 프로그램으로 설계된 스텝업 프로젝트를 소개합니다."
-        gradient="from-[#fdd8d0] via-[#fde2d4] to-[#feecd0]"
+        backgroundImage="/images/program-bg.webp"
       />
       <ProgramSection hideHeader />
       <ValuesSection />

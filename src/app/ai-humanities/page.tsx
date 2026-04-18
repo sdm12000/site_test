@@ -12,7 +12,7 @@ export default function AiHumanitiesPage() {
         badge="AI x Humanities"
         title="고전의 지혜를 AI로 만나다"
         description="사회적 구조와 문화적 트렌드가 급변하는 시대에, 고전 인문학을 기반으로 인간의 본질과 가치를 깊이 탐구합니다."
-        gradient="from-[#ccfbf1] via-[#d5f5f0] to-[#dbeafe]"
+        backgroundImage="/images/ai-bg.webp"
       />
       <AiHumanitiesSection hideHeader />
       <VisionSection />

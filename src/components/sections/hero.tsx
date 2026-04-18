@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 function Sparkle({
   className,
@@ -13,7 +14,7 @@ function Sparkle({
 }) {
   return (
     <motion.span
-      className={`absolute pointer-events-none select-none text-white/40 ${className}`}
+      className={`absolute pointer-events-none select-none text-white/50 ${className}`}
       initial={{ opacity: 0, scale: 0.5 }}
       animate={{ opacity: [0, 0.7, 0], scale: [0.5, 1, 0.5] }}
       transition={{
@@ -34,64 +35,37 @@ export function HeroSection() {
       id="hero"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      {/* Multi-layer gradient background — indigo to coral warm shift */}
-      <div className="absolute inset-0">
-        {/* Base gradient */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#c7d2fe] via-[#e0d4f7] to-[#fdd8d0]" />
-
-        {/* Flowing wave layers */}
+      {/* Background photo */}
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: "url('/images/hero-bg.webp')" }}
+      >
+        {/* Color overlay to maintain brand feel + readability */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#1e1b4b]/75 via-[#312e81]/60 to-[#7c2d12]/50" />
+        {/* Soft light glow on top */}
         <div
-          className="absolute inset-0 opacity-60"
+          className="absolute inset-0 opacity-40"
           style={{
             background:
               "radial-gradient(ellipse 80% 60% at 20% 50%, rgba(99,102,241,0.3) 0%, transparent 70%), " +
-              "radial-gradient(ellipse 60% 80% at 80% 30%, rgba(251,146,120,0.25) 0%, transparent 60%), " +
-              "radial-gradient(ellipse 70% 50% at 50% 80%, rgba(94,234,212,0.2) 0%, transparent 60%)",
+              "radial-gradient(ellipse 60% 80% at 80% 30%, rgba(251,146,120,0.2) 0%, transparent 60%)",
           }}
         />
-
-        {/* Mesh overlay */}
-        <div
-          className="absolute inset-0 opacity-30"
-          style={{
-            background:
-              "radial-gradient(ellipse 100% 40% at 30% 70%, rgba(99,102,241,0.4) 0%, transparent 50%), " +
-              "radial-gradient(ellipse 80% 50% at 70% 40%, rgba(251,146,120,0.3) 0%, transparent 50%), " +
-              "radial-gradient(ellipse 60% 80% at 10% 20%, rgba(94,234,212,0.25) 0%, transparent 60%)",
-          }}
-        />
-
-        {/* Light glow spot */}
-        <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full"
-          style={{
-            background: "radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%)",
-            top: "30%",
-            left: "40%",
-            transform: "translate(-50%,-50%)",
-          }}
-          animate={{
-            scale: [1, 1.1, 1],
-            opacity: [0.3, 0.5, 0.3],
-          }}
-          transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-
         {/* Bottom fade to background */}
         <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-t from-background to-transparent" />
       </div>
 
       {/* Orbital ellipse decoration */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] md:w-[700px] md:h-[550px]">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[400px] md:w-[700px] md:h-[550px] pointer-events-none">
         <motion.div
-          className="absolute inset-0 rounded-full border border-white/40"
+          className="absolute inset-0 rounded-full border border-white/20"
           style={{ borderRadius: "50%", transform: "rotate(-12deg)" }}
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 2, ease: "easeOut" }}
         />
         <motion.div
-          className="absolute inset-6 rounded-full border border-white/20"
+          className="absolute inset-6 rounded-full border border-white/10"
           style={{ borderRadius: "50%", transform: "rotate(8deg)" }}
           initial={{ opacity: 0, scale: 0.7 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -110,8 +84,8 @@ export function HeroSection() {
       <Sparkle className="top-[25%] left-[35%] text-sm" delay={3} char={"\u2727"} />
 
       {/* Decorative vertical lines */}
-      <div className="absolute left-[5%] top-[10%] bottom-[15%] w-px bg-gradient-to-b from-transparent via-foreground/10 to-transparent hidden md:block" />
-      <div className="absolute right-[5%] top-[8%] bottom-[12%] w-px bg-gradient-to-b from-transparent via-foreground/10 to-transparent hidden md:block" />
+      <div className="absolute left-[5%] top-[10%] bottom-[15%] w-px bg-gradient-to-b from-transparent via-white/10 to-transparent hidden md:block" />
+      <div className="absolute right-[5%] top-[8%] bottom-[12%] w-px bg-gradient-to-b from-transparent via-white/10 to-transparent hidden md:block" />
 
       {/* Content */}
       <div className="relative z-10 mx-auto max-w-4xl px-6 text-center">
@@ -119,7 +93,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-display text-lg md:text-2xl text-foreground/70 tracking-wide font-medium"
+          className="font-display text-lg md:text-2xl text-white/70 tracking-wide font-medium"
         >
           Rise Together, Grow Together
         </motion.p>
@@ -128,7 +102,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.4 }}
-          className="mt-5 font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-foreground"
+          className="mt-5 font-display text-6xl md:text-8xl lg:text-9xl font-bold tracking-tight text-white"
         >
           Step-Up
         </motion.h1>
@@ -137,7 +111,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.7 }}
-          className="mt-6 text-lg md:text-xl text-foreground-muted max-w-2xl mx-auto leading-relaxed"
+          className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
         >
           AI와 인문학이 만나, 당신의 성장을 함께합니다
         </motion.p>
@@ -148,18 +122,18 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 1 }}
           className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4"
         >
-          <a
+          <Link
             href="/program"
-            className="rounded-full bg-accent px-8 py-3.5 text-base font-medium text-white shadow-lg shadow-accent/25 transition-all hover:bg-accent-dark hover:shadow-xl hover:shadow-accent/35 hover:-translate-y-0.5"
+            className="rounded-full bg-white px-8 py-3.5 text-base font-medium text-[#312e81] shadow-lg shadow-black/20 transition-all hover:bg-white/90 hover:shadow-xl hover:-translate-y-0.5"
           >
             프로그램 알아보기
-          </a>
-          <a
+          </Link>
+          <Link
             href="/reviews"
-            className="rounded-full border border-foreground/15 bg-white/50 backdrop-blur-sm px-8 py-3.5 text-base font-medium text-foreground/70 transition-all hover:bg-white/70 hover:border-foreground/25 hover:-translate-y-0.5"
+            className="rounded-full border border-white/30 bg-white/10 backdrop-blur-sm px-8 py-3.5 text-base font-medium text-white transition-all hover:bg-white/20 hover:border-white/50 hover:-translate-y-0.5"
           >
             후기 보기
-          </a>
+          </Link>
         </motion.div>
       </div>
 
