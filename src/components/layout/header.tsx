@@ -3,19 +3,22 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { cn } from "@/lib/cn";
 
 const navLinks = [
-  { label: "소개", href: "#about" },
-  { label: "프로그램", href: "#program" },
-  { label: "AI x 인문학", href: "#ai-humanities" },
-  { label: "강사진", href: "#instructors" },
-  { label: "후기", href: "#reviews" },
+  { label: "소개", href: "/about" },
+  { label: "프로그램", href: "/program" },
+  { label: "AI x 인문학", href: "/ai-humanities" },
+  { label: "강사진", href: "/instructors" },
+  { label: "후기", href: "/reviews" },
 ];
 
 export function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
@@ -23,11 +26,9 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const scrollTo = (href: string) => {
+  useEffect(() => {
     setMobileOpen(false);
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+  }, [pathname]);
 
   return (
     <>
@@ -43,29 +44,34 @@ export function Header() {
         )}
       >
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <button
-            onClick={() => scrollTo("#hero")}
+          <Link
+            href="/"
             className="font-display text-xl font-bold tracking-tight text-foreground"
           >
             Step-Up
-          </button>
+          </Link>
 
           <nav className="hidden items-center gap-8 md:flex">
             {navLinks.map((link) => (
-              <button
+              <Link
                 key={link.href}
-                onClick={() => scrollTo(link.href)}
-                className="text-sm font-medium text-foreground-muted transition-colors hover:text-accent"
+                href={link.href}
+                className={cn(
+                  "text-sm font-medium transition-colors hover:text-accent",
+                  pathname === link.href
+                    ? "text-accent"
+                    : "text-foreground-muted",
+                )}
               >
                 {link.label}
-              </button>
+              </Link>
             ))}
-            <button
-              onClick={() => scrollTo("#cta")}
+            <Link
+              href="/reviews"
               className="rounded-full bg-accent px-5 py-2 text-sm font-medium text-white transition-all hover:bg-accent-dark hover:shadow-lg"
             >
               상담 신청
-            </button>
+            </Link>
           </nav>
 
           <button
@@ -89,20 +95,25 @@ export function Header() {
           >
             <nav className="flex flex-col items-center gap-6 pt-12">
               {navLinks.map((link) => (
-                <button
+                <Link
                   key={link.href}
-                  onClick={() => scrollTo(link.href)}
-                  className="text-lg font-medium text-foreground-muted transition-colors hover:text-accent"
+                  href={link.href}
+                  className={cn(
+                    "text-lg font-medium transition-colors hover:text-accent",
+                    pathname === link.href
+                      ? "text-accent"
+                      : "text-foreground-muted",
+                  )}
                 >
                   {link.label}
-                </button>
+                </Link>
               ))}
-              <button
-                onClick={() => scrollTo("#cta")}
+              <Link
+                href="/reviews"
                 className="mt-4 rounded-full bg-accent px-8 py-3 text-base font-medium text-white"
               >
                 상담 신청
-              </button>
+              </Link>
             </nav>
           </motion.div>
         )}

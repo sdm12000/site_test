@@ -1,17 +1,12 @@
 import type { Metadata } from "next";
-import { Noto_Serif_KR, Playfair_Display } from "next/font/google";
+import { Sora } from "next/font/google";
+import { Header } from "@/components/layout/header";
+import { Footer } from "@/components/sections/footer";
 import "./globals.css";
 
-const notoSerifKr = Noto_Serif_KR({
+const sora = Sora({
   subsets: ["latin"],
-  weight: ["400", "700", "900"],
-  variable: "--font-noto-serif-kr",
-  display: "swap",
-});
-
-const playfairDisplay = Playfair_Display({
-  subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-sora",
   display: "swap",
 });
 
@@ -38,7 +33,7 @@ export default function RootLayout({
   return (
     <html
       lang="ko"
-      className={`${notoSerifKr.variable} ${playfairDisplay.variable} h-full antialiased`}
+      className={`${sora.variable} h-full antialiased`}
     >
       <head>
         {/* Pretendard CDN */}
@@ -49,7 +44,11 @@ export default function RootLayout({
           href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css"
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        <main className="flex-1">{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

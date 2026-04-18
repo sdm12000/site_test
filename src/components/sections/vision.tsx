@@ -11,6 +11,10 @@ const universities = [
     stat: "고전학·인문학 분야 독일 1위",
     arrow: "경영학 분야 독일 1위 학부 선정",
     desc: "유럽 최고의 인문학 전통을 이어가며 고전 교육의 현대적 가치를 탐구하고 있습니다.",
+    iconBg: "bg-accent",
+    statColor: "text-accent",
+    arrowColor: "text-accent/70",
+    lineBg: "bg-accent/40",
   },
   {
     name: "영국 케임브리지 대학교",
@@ -18,6 +22,10 @@ const universities = [
     stat: "철학·인문학 분야 연구와 교육 최상위권",
     arrow: "노벨상 수상자 125명 배출",
     desc: "수세기에 걸친 인문학 교육의 깊이가 세계적 리더십의 기반이 되고 있습니다.",
+    iconBg: "bg-secondary",
+    statColor: "text-secondary",
+    arrowColor: "text-secondary/70",
+    lineBg: "bg-secondary/40",
   },
   {
     name: "미국 케년 칼리지",
@@ -25,12 +33,16 @@ const universities = [
     stat: "깊이 있는 인문학 중심 교육 환경 조성",
     arrow: "대통령부터 예술가 등 사회 전반 인재 배출",
     desc: "리버럴 아츠 교육의 정수를 통해 비판적 사고와 자기 성찰의 힘을 기르고 있습니다.",
+    iconBg: "bg-tertiary",
+    statColor: "text-tertiary",
+    arrowColor: "text-tertiary/70",
+    lineBg: "bg-tertiary/40",
   },
 ];
 
 export function VisionSection() {
   return (
-    <section className="relative py-24 md:py-32 section-gradient-blue">
+    <section className="relative py-24 md:py-32 section-gradient-cool">
       <div className="mx-auto max-w-6xl px-6">
         <FadeIn className="text-center">
           <SectionBadge>Program Vision</SectionBadge>
@@ -48,7 +60,7 @@ export function VisionSection() {
           {universities.map((uni, i) => (
             <FadeIn key={uni.name} delay={0.15 * i}>
               <div className="rounded-2xl bg-surface p-8 shadow-lg shadow-accent/5 h-full border border-border/20 transition-all hover:shadow-xl hover:-translate-y-1">
-                <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-accent text-white shadow-sm">
+                <div className={`flex h-12 w-12 items-center justify-center rounded-xl ${uni.iconBg} text-white shadow-sm`}>
                   <GraduationCap className="h-6 w-6" />
                 </div>
                 <h3 className="mt-5 font-display text-lg font-bold text-foreground">
@@ -58,9 +70,9 @@ export function VisionSection() {
 
                 {/* Stat */}
                 <div className="mt-4 space-y-2">
-                  <p className="text-sm font-medium text-accent">{uni.stat}</p>
-                  <p className="text-xs text-accent/70 flex items-center gap-1.5">
-                    <span className="inline-block w-4 h-px bg-accent/40" />
+                  <p className={`text-sm font-medium ${uni.statColor}`}>{uni.stat}</p>
+                  <p className={`text-xs ${uni.arrowColor} flex items-center gap-1.5`}>
+                    <span className={`inline-block w-4 h-px ${uni.lineBg}`} />
                     {uni.arrow}
                   </p>
                 </div>

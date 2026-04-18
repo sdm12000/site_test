@@ -18,7 +18,7 @@ function InstructorPhoto({
   const [imgError, setImgError] = useState(false);
 
   return (
-    <div className="relative mx-auto flex h-44 w-44 md:h-52 md:w-52 items-center justify-center rounded-full overflow-hidden bg-gradient-to-br from-[#b8dff5]/40 via-[#d4ecfb]/30 to-[#e8d5f0]/30 shadow-lg shadow-accent/10">
+    <div className="relative mx-auto flex h-44 w-44 md:h-52 md:w-52 items-center justify-center rounded-full overflow-hidden bg-gradient-to-br from-accent-light/30 via-secondary-light/30 to-tertiary-light/30 shadow-lg shadow-accent/10">
       {/* Decorative ring */}
       <div className="absolute inset-0 rounded-full border-2 border-white/50" />
 
@@ -40,22 +40,24 @@ function InstructorPhoto({
   );
 }
 
-export function InstructorsSection() {
+export function InstructorsSection({ hideHeader = false }: { hideHeader?: boolean }) {
   return (
     <section
       id="instructors"
       className="relative py-24 md:py-32 bg-background"
     >
       <div className="mx-auto max-w-6xl px-6">
-        <FadeIn className="text-center">
-          <SectionBadge>Instructors</SectionBadge>
-          <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            함께 걸어가는 성장의 동반자
-          </h2>
-          <p className="mt-4 text-foreground-muted max-w-xl mx-auto">
-            &ldquo;작은 발걸음부터 뗄 수 있게 성장을 돕습니다.&rdquo;
-          </p>
-        </FadeIn>
+        {!hideHeader && (
+          <FadeIn className="text-center">
+            <SectionBadge>Instructors</SectionBadge>
+            <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              함께 걸어가는 성장의 동반자
+            </h2>
+            <p className="mt-4 text-foreground-muted max-w-xl mx-auto">
+              &ldquo;작은 발걸음부터 뗄 수 있게 성장을 돕습니다.&rdquo;
+            </p>
+          </FadeIn>
+        )}
 
         <div className="mt-14 md:mt-20 space-y-12 md:space-y-16">
           {instructors.map((instructor, i) => {
@@ -71,10 +73,10 @@ export function InstructorsSection() {
                   style={{
                     background:
                       i === 0
-                        ? "linear-gradient(135deg, #e8f4fd 0%, #f0e8f5 100%)"
+                        ? "linear-gradient(135deg, oklch(0.94 0.04 265) 0%, oklch(0.95 0.03 25) 100%)"
                         : i === 1
-                          ? "linear-gradient(135deg, #e8f4fd 0%, #f5ede8 100%)"
-                          : "linear-gradient(135deg, #edf5e8 0%, #e8f0f5 100%)",
+                          ? "linear-gradient(135deg, oklch(0.95 0.03 25) 0%, oklch(0.94 0.04 175) 100%)"
+                          : "linear-gradient(135deg, oklch(0.94 0.04 175) 0%, oklch(0.94 0.04 265) 100%)",
                   }}
                 >
                   <div

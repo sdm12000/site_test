@@ -25,16 +25,18 @@ const stats = [
   },
 ];
 
-export function AboutSection() {
+export function AboutSection({ hideHeader = false }: { hideHeader?: boolean }) {
   return (
     <section id="about" className="relative py-20 md:py-28 bg-background">
       <div className="mx-auto max-w-6xl px-6">
-        <FadeIn className="text-center">
-          <SectionBadge>About Us</SectionBadge>
-          <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            새로운 교육의 방향을 제시합니다
-          </h2>
-        </FadeIn>
+        {!hideHeader && (
+          <FadeIn className="text-center">
+            <SectionBadge>About Us</SectionBadge>
+            <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
+              새로운 교육의 방향을 제시합니다
+            </h2>
+          </FadeIn>
+        )}
 
         <FadeIn delay={0.2} className="mt-12 md:mt-16">
           <div className="mx-auto max-w-5xl rounded-3xl bg-surface p-8 md:p-12 shadow-xl shadow-accent/5 border border-border/30">

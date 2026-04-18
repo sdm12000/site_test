@@ -1,19 +1,28 @@
 @import "tailwindcss";
 
 @theme inline {
-  --color-background:       oklch(0.97 0.01 230);
-  --color-background-alt:   oklch(0.95 0.02 230);
-  --color-surface:          oklch(0.99 0.005 60);
-  --color-foreground:       oklch(0.18 0.03 250);
-  --color-foreground-muted: oklch(0.45 0.02 250);
-  --color-border:           oklch(0.88 0.02 230);
-  --color-accent:           oklch(0.55 0.15 230);
-  --color-accent-light:     oklch(0.70 0.10 230);
-  --color-accent-dark:      oklch(0.40 0.15 230);
-  --color-secondary:        oklch(0.75 0.08 300);
-  --color-secondary-light:  oklch(0.90 0.05 300);
+  /* Indigo + Coral + Mint — vibrant, multi-tonal palette */
+  --color-background:       oklch(0.98 0.004 260);
+  --color-background-alt:   oklch(0.96 0.008 260);
+  --color-surface:          oklch(0.995 0.002 80);
+  --color-foreground:       oklch(0.15 0.04 265);
+  --color-foreground-muted: oklch(0.45 0.025 265);
+  --color-border:           oklch(0.90 0.015 265);
 
-  --font-display: "Noto Serif KR", "Playfair Display", serif;
+  /* Primary — deep indigo */
+  --color-accent:           oklch(0.48 0.18 265);
+  --color-accent-light:     oklch(0.65 0.12 265);
+  --color-accent-dark:      oklch(0.35 0.18 265);
+
+  /* Secondary — warm coral */
+  --color-secondary:        oklch(0.68 0.16 25);
+  --color-secondary-light:  oklch(0.88 0.08 25);
+
+  /* Tertiary — fresh mint/teal */
+  --color-tertiary:         oklch(0.68 0.14 175);
+  --color-tertiary-light:   oklch(0.90 0.06 175);
+
+  --font-display: var(--font-sora), "Pretendard Variable", "Pretendard", sans-serif;
   --font-body: "Pretendard Variable", "Pretendard", -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
 
@@ -76,8 +85,8 @@ body {
    Selection colour
    ---------------------------------------------------------------- */
 ::selection {
-  background-color: oklch(0.55 0.15 230 / 0.2);
-  color: oklch(0.18 0.03 250);
+  background-color: oklch(0.48 0.18 265 / 0.2);
+  color: oklch(0.15 0.04 265);
 }
 
 /* ----------------------------------------------------------------
@@ -92,21 +101,47 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: oklch(0.80 0.02 230);
+  background: oklch(0.80 0.02 265);
   border-radius: 3px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: oklch(0.65 0.05 230);
+  background: oklch(0.65 0.05 265);
 }
 
 /* ----------------------------------------------------------------
    Section divider gradient
    ---------------------------------------------------------------- */
-.section-gradient-blue {
+.section-gradient-warm {
   background: linear-gradient(180deg,
-    oklch(0.97 0.01 230) 0%,
-    oklch(0.93 0.03 230) 50%,
-    oklch(0.96 0.02 230) 100%
+    oklch(0.98 0.004 260) 0%,
+    oklch(0.96 0.015 30) 50%,
+    oklch(0.98 0.004 260) 100%
   );
+}
+
+.section-gradient-cool {
+  background: linear-gradient(180deg,
+    oklch(0.98 0.004 260) 0%,
+    oklch(0.96 0.015 175) 50%,
+    oklch(0.98 0.004 260) 100%
+  );
+}
+
+/* ----------------------------------------------------------------
+   Marquee (infinite horizontal scroll)
+   ---------------------------------------------------------------- */
+@keyframes marquee-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+/* Pause on hover for readability */
+.overflow-hidden:hover > [style*="marquee"] {
+  animation-play-state: paused;
 }

@@ -10,24 +10,27 @@ const packages = [
     title: "맞춤식 개별 컨설팅",
     desc: "전문가의 마음 건강진단과 라이프 로드맵 수립을 통해 개인에게 최적화된 성장 경로를 제시합니다.",
     gradient: "from-accent/15 to-accent/5",
+    iconColor: "text-accent",
   },
   {
     icon: Sparkles,
     title: "체험 활동",
     desc: "외부 프로젝트와 연계하여 숨은 재능을 발휘하고, 실제 경험을 통해 성장의 기회를 넓힙니다.",
-    gradient: "from-accent/10 to-secondary/10",
+    gradient: "from-secondary/15 to-secondary/5",
+    iconColor: "text-secondary",
   },
   {
     icon: Heart,
     title: "마음 나눔 커뮤니티",
     desc: "수강생들로 구성된 지속적인 네트워킹 공간에서 서로의 성장을 응원하고 나눕니다.",
-    gradient: "from-secondary/10 to-accent/10",
+    gradient: "from-tertiary/15 to-tertiary/5",
+    iconColor: "text-tertiary",
   },
 ];
 
 export function SpecialPackageSection() {
   return (
-    <section className="relative py-24 md:py-32 section-gradient-blue">
+    <section className="relative py-24 md:py-32 section-gradient-warm">
       <div className="mx-auto max-w-6xl px-6">
         <FadeIn className="text-center">
           <SectionBadge>Special Gift Package</SectionBadge>
@@ -43,7 +46,7 @@ export function SpecialPackageSection() {
               <FadeIn key={pkg.title} delay={0.15 * i}>
                 <div className="group rounded-3xl bg-surface p-8 md:p-10 shadow-lg shadow-accent/5 text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1 h-full border border-border/20">
                   <div
-                    className={`mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${pkg.gradient} text-accent transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg group-hover:shadow-accent/15`}
+                    className={`mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-gradient-to-br ${pkg.gradient} ${pkg.iconColor} transition-all duration-300 group-hover:scale-105 group-hover:shadow-lg`}
                   >
                     <Icon className="h-7 w-7" />
                   </div>

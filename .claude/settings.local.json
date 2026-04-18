@@ -1,0 +1,29 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(mkdir -p \"/c/Users/ﾾￆﾸￜﾤﾾￊﾡ/Desktop/사이트 제작/.claude/agents\")",
+      "Bash(mkdir -p \"/c/Users/ﾾￆﾸￜﾤﾾￊﾡ/Desktop/사이트 제작/.claude/skills/concept-analysis\")",
+      "Bash(mkdir -p \"/c/Users/ﾾￆﾸￜﾤﾾￊﾡ/Desktop/사이트 제작/.claude/skills/design-system/references\")",
+      "Bash(mkdir -p \"/c/Users/ﾾￆﾸￜﾤﾾￊﾡ/Desktop/사이트 제작/.claude/skills/site-builder/references\")",
+      "Bash(mkdir -p \"/c/Users/ﾾￆﾸￜﾤﾾￊﾡ/Desktop/사이트 제작/.claude/skills/design-qa\")",
+      "Bash(wc *)",
+      "WebSearch",
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --src-dir --no-import-alias --yes)",
+      "Bash(npx create-next-app@latest learnx-temp --typescript --tailwind --eslint --app --src-dir --no-import-alias --yes)",
+      "Bash(cp -r learnx-temp/* .)",
+      "Bash(cp learnx-temp/.gitignore .)",
+      "Bash(cp learnx-temp/.eslintrc.json .)",
+      "Bash(cp -r learnx-temp/.next .)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Bash(npx next *)",
+      "Bash(echo \"Dev server started, PID: $!\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(npx create-next-app@latest site --typescript --tailwind --eslint --app --src-dir --import-alias \"@/*\" --use-npm --no-turbopack)",
+      "WebFetch(domain:localhost)",
+      "Bash(curl -s http://localhost:3000)",
+      "Bash(start http://localhost:3000)",
+      "Bash(cmd.exe /c start http://localhost:3000)"
+    ]
+  }
+}

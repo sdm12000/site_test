@@ -1,22 +1,19 @@
-export function Footer() {
-  const scrollTo = (href: string) => {
-    const el = document.querySelector(href);
-    if (el) el.scrollIntoView({ behavior: "smooth" });
-  };
+import Link from "next/link";
 
+export function Footer() {
   return (
     <footer className="bg-foreground py-12 md:py-16">
       <div className="mx-auto max-w-6xl px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <p className="font-display text-2xl font-bold text-white">
+            <Link href="/" className="font-display text-2xl font-bold text-white">
               Step-Up
-            </p>
+            </Link>
             <p className="mt-2 text-sm text-white/50">
               QLI (Quantum Leap Institute)
             </p>
-            <p className="mt-1 text-sm text-white/40 italic">
+            <p className="mt-1 text-sm text-white/40">
               Rise Together, Grow Together
             </p>
             <p className="mt-3 text-xs text-white/30">
@@ -29,20 +26,19 @@ export function Footer() {
             <p className="text-sm font-medium text-white/70 mb-4">바로가기</p>
             <div className="space-y-2">
               {[
-                { label: "소개", href: "#about" },
-                { label: "프로그램", href: "#program" },
-                { label: "AI x 인문학", href: "#ai-humanities" },
-                { label: "강사진", href: "#instructors" },
-                { label: "후기", href: "#reviews" },
-                { label: "상담 신청", href: "#cta" },
+                { label: "소개", href: "/about" },
+                { label: "프로그램", href: "/program" },
+                { label: "AI x 인문학", href: "/ai-humanities" },
+                { label: "강사진", href: "/instructors" },
+                { label: "후기", href: "/reviews" },
               ].map((link) => (
                 <p key={link.href}>
-                  <button
-                    onClick={() => scrollTo(link.href)}
+                  <Link
+                    href={link.href}
                     className="text-sm text-white/40 transition-colors hover:text-white/80"
                   >
                     {link.label}
-                  </button>
+                  </Link>
                 </p>
               ))}
             </div>
