@@ -3,7 +3,7 @@
 import { HeroSection } from "@/components/sections/hero";
 import { FadeIn } from "@/components/motion/fade-in";
 import Link from "next/link";
-import { ArrowRight, BookOpen, Brain, Users, MessageCircle, Star } from "lucide-react";
+import { ArrowRight, BookOpen, Brain, Book, Star } from "lucide-react";
 
 const overviewCards = [
   {
@@ -21,25 +21,18 @@ const overviewCards = [
     color: "bg-secondary/10 text-secondary",
   },
   {
-    title: "AI x 인문학",
-    desc: "고전의 지혜를 AI 기술로 만나는 5가지 학습 혁신",
-    href: "/ai-humanities",
-    icon: MessageCircle,
+    title: "교재",
+    desc: "오랜 세월 검증된 지혜의 텍스트로 삶의 통찰력을 제공합니다",
+    href: "/textbook",
+    icon: Book,
     color: "bg-tertiary/10 text-tertiary",
-  },
-  {
-    title: "강사진",
-    desc: "함께 걸어가는 성장의 동반자들을 만나보세요",
-    href: "/instructors",
-    icon: Users,
-    color: "bg-accent/10 text-accent",
   },
   {
     title: "후기",
     desc: "Step-Up과 함께한 사람들의 생생한 이야기",
     href: "/reviews",
     icon: Star,
-    color: "bg-secondary/10 text-secondary",
+    color: "bg-accent/10 text-accent",
   },
 ];
 

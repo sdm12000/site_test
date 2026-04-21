@@ -10,8 +10,7 @@ import { cn } from "@/lib/cn";
 const navLinks = [
   { label: "소개", href: "/about" },
   { label: "프로그램", href: "/program" },
-  { label: "AI x 인문학", href: "/ai-humanities" },
-  { label: "강사진", href: "/instructors" },
+  { label: "교재", href: "/textbook" },
   { label: "후기", href: "/reviews" },
 ];
 

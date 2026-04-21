@@ -17,7 +17,7 @@ export function Footer() {
               Rise Together, Grow Together
             </p>
             <p className="mt-3 text-xs text-white/30">
-              AI와 인문학이 만나, 당신의 성장을 함께합니다.
+              작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다.
             </p>
           </div>
 
@@ -28,8 +28,7 @@ export function Footer() {
               {[
                 { label: "소개", href: "/about" },
                 { label: "프로그램", href: "/program" },
-                { label: "AI x 인문학", href: "/ai-humanities" },
-                { label: "강사진", href: "/instructors" },
+                { label: "교재", href: "/textbook" },
                 { label: "후기", href: "/reviews" },
               ].map((link) => (
                 <p key={link.href}>

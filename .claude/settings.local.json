@@ -46,7 +46,22 @@
       "Bash(taskkill //F //IM node.exe)",
       "Bash(tasklist)",
       "Bash(netstat -ano)",
-      "Bash(taskkill *)"
+      "Bash(taskkill *)",
+      "Bash(python *)",
+      "Bash(pip install *)",
+      "Bash(pip3 install *)",
+      "Bash(npx -y pdf-parse-cli \"Step_Up-Program-Proposal_4_-5월-ver_.pdf\")",
+      "Bash(node -e \" const fs = require\\('fs'\\); const path = 'Step_Up-Program-Proposal_4_-5월-ver_.pdf'; const buf = fs.readFileSync\\(path\\); // Basic PDF text extraction const text = buf.toString\\('latin1'\\); const matches = text.match\\(/\\\\\\(\\([^\\)]+\\)\\\\\\)/g\\); if \\(matches\\) { const decoded = matches.map\\(m => m.slice\\(1, -1\\)\\).join\\(' '\\); console.log\\(decoded.substring\\(0, 5000\\)\\); } else { console.log\\('No text found with basic extraction'\\); } \")",
+      "Bash(npm list *)",
+      "Bash(node *)",
+      "Bash(rm \"C:/Users/ﾾￆﾸￜﾤﾾￊﾡ/site_test/src/app/instructors/page.tsx\")",
+      "Bash(rmdir \"C:/Users/ﾾￆﾸￜﾤﾾￊﾡ/site_test/src/app/instructors\")",
+      "Bash(rm \"C:/Users/ﾾￆﾸￜﾤﾾￊﾡ/site_test/src/components/sections/instructors.tsx\")",
+      "Bash(rm \"C:/Users/ﾾￆﾸￜﾤﾾￊﾡ/site_test/src/lib/instructors-data.ts\")",
+      "Bash(rm \"C:/Users/ﾾￆﾸￜﾤﾾￊﾡ/site_test/src/app/ai-humanities/page.tsx\")",
+      "Bash(rm -f pdf_page_*.png)",
+      "Bash(npm uninstall *)",
+      "Bash(npx --yes puppeteer browsers install chrome)"
     ]
   }
 }

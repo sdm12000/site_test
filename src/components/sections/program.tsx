@@ -51,7 +51,7 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
             <p className="mt-4 mx-auto max-w-3xl text-foreground-muted leading-relaxed">
               &lsquo;스텝 업(Step-Up) 프로젝트&rsquo;는 큰 변화보다 &lsquo;작은 전진&rsquo;에 의미를 두며
               단계를 올려가는 성장을 지향합니다. 청년들 스스로 자신의 가능성을 발견해갈 수 있도록
-              인문학 기반의 AI 교육 프로그램으로 설계되었으며,{" "}
+              인문학 기반의 교육 프로그램으로 설계되었으며,{" "}
               <strong className="text-foreground">작은 실천을 통해 현실 속에서 삶의 변화를 만들어가는 것</strong>을
               목표로 합니다.
             </p>
@@ -96,6 +96,7 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
             </p>
             <p className="mt-2 text-sm text-foreground-muted">
               당신의 한 걸음은 곧, 누군가의 새로운 시작이 될 수 있습니다.
+              그리고 그 시작은 함께 걷는 모두를 성장하게 합니다.
             </p>
           </div>
         </FadeIn>

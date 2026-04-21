@@ -113,7 +113,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="mt-6 text-lg md:text-xl text-white/80 max-w-2xl mx-auto leading-relaxed"
         >
-          AI와 인문학이 만나, 당신의 성장을 함께합니다
+          작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다
         </motion.p>
 
         <motion.div

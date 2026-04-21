@@ -13,15 +13,15 @@ const sora = Sora({
 export const metadata: Metadata = {
   title: "Step-Up | Rise Together, Grow Together",
   description:
-    "AI와 인문학이 만나, 당신의 성장을 함께합니다. QLI(Quantum Leap Institute)의 인문학 기반 AI 교육 프로그램 Step-Up.",
+    "작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다. QLI(Quantum Leap Institute)의 인문학 기반 교육 프로그램 Step-Up.",
   keywords: [
     "Step-Up",
     "QLI",
     "인문학",
-    "AI 교육",
-    "자기 성장",
     "청년 교육",
+    "자기 성장",
     "고전 인문학",
+    "Quantum Leap Institute",
   ],
 };
 

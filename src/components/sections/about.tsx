@@ -56,12 +56,14 @@ export function AboutSection({ hideHeader = false }: { hideHeader?: boolean }) {
               </div>
               <div>
                 <h3 className="font-display text-xl font-bold text-foreground mb-4">
-                  한국 교육의 문제를 해결합니다
+                  한국 교육의 구조적 문제를 해결합니다
                 </h3>
                 <p className="text-foreground-muted leading-relaxed">
-                  교육의 획일화, 자기 탐색 기회 부족, 극심한 경쟁 구조 속에서 많은 청년들이
-                  자기 주체성 상실, 정신적 소진, 관계 단절, 심리적 고립을 경험하고 있습니다.
-                  QLI는 <strong className="text-foreground">인문학 기반 AI 교육</strong>으로 이 문제를 해결합니다.
+                  1970~80년대 산업화 시기의 국가 주도 교육 시스템으로 인해 대학입시 중심 체제와
+                  통제형 교육 기조가 지금까지 유지되면서 교육의 획일화, 자기 탐색 기회 부족,
+                  극심한 경쟁 구조, 정서적 돌봄 결핍, 삶의 방향성 상실 등의 문제가 이어지고 있습니다.
+                  이제 <strong className="text-foreground">자기 주체성의 부재, 정신건강 무관심, 회피와 번아웃,
+                  인간관계의 단절, 심리적 고립</strong> 등은 개인과 사회가 해결해야 할 과제가 되었습니다.
                 </p>
               </div>
             </div>

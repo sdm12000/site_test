@@ -24,9 +24,9 @@ const steps = [
 ];
 
 const goals = [
-  { title: "가치 발견", desc: "자신만의 독특한 가치를 발견" },
-  { title: "배움의 기회 제공", desc: "잠재력을 최대한 발휘" },
-  { title: "개인의 성장과\n사회의 지속 성장", desc: "함께 성장하는 사회" },
+  { title: "가치 발견", desc: "각 개인이 자신만의 독특한 가치를 발견하고 사회에 기여" },
+  { title: "배움의 기회 제공", desc: "고전 문학과 경전의 가치 안에서 잠재력을 최대한 발휘" },
+  { title: "개인의 성장과\n사회의 지속 성장", desc: "고대와 현대의 대화를 통해 풍요로운 인생 설계" },
 ];
 
 export function ValuesSection() {
@@ -39,8 +39,9 @@ export function ValuesSection() {
             교육 핵심 가치
           </h2>
           <p className="mt-4 mx-auto max-w-2xl text-foreground-muted leading-relaxed">
-            고대와 현대의 대화를 통해 새로운 통찰과 비전을 얻게 함으로써,
-            풍요로운 인생을 설계할 수 있도록 길을 열어드리겠습니다.
+            사회적 구조와 문화적 트렌드가 급변함에 따라, 개인의 독창성과 내면적 가치는
+            표준화된 기준이나 외부적 기대에 밀려 희미해지고 있습니다. 이러한 시대에
+            고전 인문학을 기반으로 인간의 본질과 가치를 깊이 탐구하는 여정을 제공합니다.
           </p>
         </FadeIn>
 
