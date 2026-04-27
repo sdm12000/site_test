@@ -1,9 +1,17 @@
-"use client";
-
+import type { Metadata } from "next";
 import { HeroSection } from "@/components/sections/hero";
 import { FadeIn } from "@/components/motion/fade-in";
 import Link from "next/link";
 import { ArrowRight, BookOpen, Brain, Book, Star } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: {
+    absolute: "Step-Up | Rise Together, Grow Together",
+  },
+  description:
+    "유럽에서 시작된 글로벌 청년 교육 기관 QLI의 인문학 기반 교육 프로그램 Step-Up. 작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다.",
+  alternates: { canonical: "/" },
+};
 
 const overviewCards = [
   {

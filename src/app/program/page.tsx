@@ -1,11 +1,24 @@
-"use client";
-
+import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/page-hero";
 import { ProgramSection } from "@/components/sections/program";
 import { ValuesSection } from "@/components/sections/values";
 import { VisionSection } from "@/components/sections/vision";
 import { SpecialPackageSection } from "@/components/sections/special-package";
 import { PageCta } from "@/components/ui/page-cta";
+
+export const metadata: Metadata = {
+  title: "프로그램",
+  description:
+    "인문학 기반의 교육 프로그램 Step-Up Project. 4가지 핵심 가치를 기반으로 작은 전진이 만드는 큰 변화의 성장 여정을 안내합니다.",
+  alternates: { canonical: "/program" },
+  openGraph: {
+    title: "프로그램 | Step-Up",
+    description:
+      "인문학 기반의 교육 프로그램으로 설계된 스텝업 프로젝트를 소개합니다.",
+    url: "/program",
+    images: ["/images/program-bg.webp"],
+  },
+};
 
 export default function ProgramPage() {
   return (
