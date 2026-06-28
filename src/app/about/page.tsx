@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { PageHero } from "@/components/ui/page-hero";
 import { AboutSection } from "@/components/sections/about";
+import { InstructorsSection } from "@/components/sections/instructors";
 import { PageCta } from "@/components/ui/page-cta";
 
 export const metadata: Metadata = {
   title: "소개",
   description:
-    "유럽에서 시작된 글로벌 청년 교육 기관 QLI(Quantum Leap Institute)가 제시하는 새로운 교육의 방향과 Step-Up의 철학을 소개합니다.",
+    "유럽에서 시작된 글로벌 청년 교육 기관 QLI(Quantum Leap Institute)가 제시하는 새로운 교육의 방향과 ROOTIVE CLASS의 철학, 그리고 함께하는 강사진을 소개합니다.",
   alternates: { canonical: "/about" },
   openGraph: {
-    title: "소개 | Step-Up",
+    title: "소개 | ROOTIVE CLASS",
     description:
       "유럽에서 시작된 글로벌 청년 교육 기관 QLI가 제시하는 새로운 교육의 방향.",
     url: "/about",
@@ -27,6 +28,7 @@ export default function AboutPage() {
         backgroundImage="/images/about-bg.webp"
       />
       <AboutSection hideHeader />
+      <InstructorsSection />
       <PageCta nextLabel="프로그램 알아보기" nextHref="/program" />
     </>
   );

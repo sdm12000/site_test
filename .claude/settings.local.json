@@ -61,7 +61,9 @@
       "Bash(rm \"C:/Users/ﾾￆﾸￜﾤﾾￊﾡ/site_test/src/app/ai-humanities/page.tsx\")",
       "Bash(rm -f pdf_page_*.png)",
       "Bash(npm uninstall *)",
-      "Bash(npx --yes puppeteer browsers install chrome)"
+      "Bash(npx --yes puppeteer browsers install chrome)",
+      "Bash(pip list *)",
+      "Bash(cd *)"
     ]
   }
 }

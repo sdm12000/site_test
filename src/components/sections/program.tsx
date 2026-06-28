@@ -44,16 +44,15 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
       <div className="mx-auto max-w-6xl px-6">
         {!hideHeader && (
           <FadeIn className="text-center">
-            <SectionBadge>Step-Up Project</SectionBadge>
+            <SectionBadge>ROOTIVE CLASS</SectionBadge>
             <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              작은 전진이 만드는 큰 변화
+              내면의 단단한 중심을 세우다
             </h2>
             <p className="mt-4 mx-auto max-w-3xl text-foreground-muted leading-relaxed">
-              &lsquo;스텝 업(Step-Up) 프로젝트&rsquo;는 큰 변화보다 &lsquo;작은 전진&rsquo;에 의미를 두며
-              단계를 올려가는 성장을 지향합니다. 청년들 스스로 자신의 가능성을 발견해갈 수 있도록
-              인문학 기반의 교육 프로그램으로 설계되었으며,{" "}
-              <strong className="text-foreground">작은 실천을 통해 현실 속에서 삶의 변화를 만들어가는 것</strong>을
-              목표로 합니다.
+              &lsquo;루티브 클래스(Rootive Class)&rsquo;는 보여주기식 성과보다 &lsquo;내면의 단단한 중심&rsquo;에
+              의미를 두며 스스로 움직이는 성장을 지향합니다. 청년들이 인문학을 통해 자신의 가능성과
+              진짜 동기(Motive)를 발견하고,{" "}
+              <strong className="text-foreground">작은 실천으로 삶의 변화를 만들어가도록</strong> 돕습니다.
             </p>
           </FadeIn>
         )}
@@ -89,14 +88,14 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
         <FadeIn delay={0.6} className="mt-16 text-center">
           <div className="inline-block rounded-2xl bg-white/60 backdrop-blur-sm px-8 py-5 shadow-sm">
             <p className="text-lg md:text-xl text-foreground font-display font-bold">
-              스텝업은 완벽한 사람이 아니라
+              루티브 클래스는 완벽한 사람이 아니라
               <br className="md:hidden" />{" "}
               <span className="text-accent">&lsquo;움직일 준비가 된 사람&rsquo;</span>을
               기다립니다
             </p>
             <p className="mt-2 text-sm text-foreground-muted">
-              당신의 한 걸음은 곧, 누군가의 새로운 시작이 될 수 있습니다.
-              그리고 그 시작은 함께 걷는 모두를 성장하게 합니다.
+              내면의 깊어진 뿌리는 곧, 더 높이 날아오를 나만의 원동력이 됩니다.
+              그리고 그 시작은 함께하는 모두를 성장하게 합니다.
             </p>
           </div>
         </FadeIn>

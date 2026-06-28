@@ -42,7 +42,7 @@ export function ReviewsSection({ hideHeader = false }: { hideHeader?: boolean })
           <FadeIn className="text-center">
             <SectionBadge>Class Review</SectionBadge>
             <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-              Step-Up과 함께한 사람들의 이야기
+              ROOTIVE CLASS와 함께한 사람들의 이야기
             </h2>
             <p className="mt-4 text-foreground-muted">
               실제 수강생들의 생생한 후기입니다

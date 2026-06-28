@@ -8,16 +8,16 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="font-display text-2xl font-bold text-white">
-              Step-Up
+              ROOTIVE CLASS
             </Link>
             <p className="mt-2 text-sm text-white/50">
               QLI (Quantum Leap Institute)
             </p>
             <p className="mt-1 text-sm text-white/40">
-              Rise Together, Grow Together
+              Grow Deep, Fly High
             </p>
             <p className="mt-3 text-xs text-white/30">
-              작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다.
+              내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다.
             </p>
           </div>
 
@@ -47,7 +47,7 @@ export function Footer() {
           <div>
             <p className="text-sm font-medium text-white/70 mb-4">문의</p>
             <p className="text-sm text-white/40 leading-relaxed">
-              Step-Up 프로그램에 대해 궁금한 점이 있으시면
+              ROOTIVE CLASS 프로그램에 대해 궁금한 점이 있으시면
               <br />
               언제든지 문의해 주세요.
             </p>

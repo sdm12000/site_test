@@ -6,10 +6,10 @@ import { ArrowRight, BookOpen, Brain, Book, Star } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Step-Up | Rise Together, Grow Together",
+    absolute: "ROOTIVE CLASS | Grow Deep, Fly High",
   },
   description:
-    "유럽에서 시작된 글로벌 청년 교육 기관 QLI의 인문학 기반 교육 프로그램 Step-Up. 작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다.",
+    "유럽에서 시작된 글로벌 청년 교육 기관 QLI의 인문학 기반 교육 프로그램 ROOTIVE CLASS. 내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다.",
   alternates: { canonical: "/" },
 };
 
@@ -23,7 +23,7 @@ const overviewCards = [
   },
   {
     title: "프로그램",
-    desc: "작은 전진이 만드는 큰 변화, 4가지 핵심 가치를 기반으로 한 성장 여정",
+    desc: "내면의 단단한 중심을 세우는 4가지 핵심 가치 기반의 성장 여정",
     href: "/program",
     icon: Brain,
     color: "bg-secondary/10 text-secondary",
@@ -37,7 +37,7 @@ const overviewCards = [
   },
   {
     title: "후기",
-    desc: "Step-Up과 함께한 사람들의 생생한 이야기",
+    desc: "ROOTIVE CLASS와 함께한 사람들의 생생한 이야기",
     href: "/reviews",
     icon: Star,
     color: "bg-accent/10 text-accent",
@@ -54,10 +54,10 @@ export default function Home() {
         <div className="mx-auto max-w-6xl px-6">
           <FadeIn className="text-center">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-foreground">
-              Step-Up 둘러보기
+              ROOTIVE CLASS 둘러보기
             </h2>
             <p className="mt-4 text-foreground-muted max-w-xl mx-auto">
-              각 페이지에서 Step-Up의 다양한 프로그램과 가치를 확인해보세요
+              각 페이지에서 ROOTIVE CLASS의 다양한 프로그램과 가치를 확인해보세요
             </p>
           </FadeIn>
 

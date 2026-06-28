@@ -30,16 +30,16 @@ export function PageCta({
               className="px-8 pt-12 pb-12 md:px-16 md:pt-16 md:pb-16"
               style={{
                 background:
-                  "linear-gradient(165deg, oklch(0.55 0.16 265) 0%, oklch(0.48 0.18 265) 35%, oklch(0.55 0.14 25) 80%, oklch(0.62 0.15 25) 100%)",
+                  "linear-gradient(165deg, oklch(0.55 0.15 248) 0%, oklch(0.50 0.15 245) 35%, oklch(0.62 0.14 230) 80%, oklch(0.70 0.13 220) 100%)",
               }}
             >
               <p className="text-sm md:text-base text-white/70 font-display">
-                Rise Together, Grow Together
+                Grow Deep, Fly High
               </p>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold text-white">
                 당신의 첫 걸음을
                 <br />
-                Step-Up과 함께
+                ROOTIVE CLASS와 함께
               </h2>
 
               <div className="mt-8 mb-8 w-16 h-px bg-white/25 mx-auto" />

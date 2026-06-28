@@ -14,7 +14,7 @@ export function PageHero({
   badge,
   title,
   description,
-  gradient = "from-[#c7d2fe] via-[#e0d4f7] to-[#fdd8d0]",
+  gradient = "from-[#cfe8ff] via-[#bfe0fb] to-[#e3f1fb]",
   backgroundImage,
 }: PageHeroProps) {
   const hasImage = !!backgroundImage;
@@ -29,7 +29,7 @@ export function PageHero({
       style={hasImage ? { backgroundImage: `url('${backgroundImage}')` } : undefined}
     >
       {hasImage ? (
-        <div className="absolute inset-0 bg-gradient-to-br from-[#1e1b4b]/75 via-[#312e81]/65 to-[#7c2d12]/55" />
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0b3a66]/80 via-[#0e5aa0]/65 to-[#1c7fd6]/55" />
       ) : (
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[400px] rounded-full bg-white/20 blur-[100px] pointer-events-none" />
       )}
@@ -82,7 +82,7 @@ export function PageHero({
         >
           <path
             d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            fill="oklch(0.98 0.004 260)"
+            fill="oklch(0.985 0.006 230)"
           />
         </svg>
       </div>

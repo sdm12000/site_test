@@ -11,20 +11,21 @@ const sora = Sora({
 });
 
 const SITE_URL = "https://site-test-red.vercel.app";
-const SITE_NAME = "Step-Up";
+const SITE_NAME = "ROOTIVE CLASS";
 const SITE_DESCRIPTION =
-  "작은 전진이 만드는 큰 변화, 당신의 성장을 함께합니다. QLI(Quantum Leap Institute)의 인문학 기반 교육 프로그램 Step-Up.";
+  "내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다. QLI(Quantum Leap Institute)의 인문학 기반 교육 프로그램 ROOTIVE CLASS.";
 const OG_IMAGE = "/images/hero-bg.webp";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: `${SITE_NAME} | Rise Together, Grow Together`,
+    default: `${SITE_NAME} | Grow Deep, Fly High`,
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "Step-Up",
+    "ROOTIVE CLASS",
+    "루티브 클래스",
     "QLI",
     "인문학",
     "청년 교육",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     url: SITE_URL,
     siteName: SITE_NAME,
-    title: `${SITE_NAME} | Rise Together, Grow Together`,
+    title: `${SITE_NAME} | Grow Deep, Fly High`,
     description: SITE_DESCRIPTION,
     images: [
       {
@@ -53,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: `${SITE_NAME} | Rise Together, Grow Together`,
+    title: `${SITE_NAME} | Grow Deep, Fly High`,
     description: SITE_DESCRIPTION,
     images: [OG_IMAGE],
   },

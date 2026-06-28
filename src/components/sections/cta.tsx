@@ -28,19 +28,19 @@ export function CtaSection() {
                 className="absolute inset-0"
                 style={{
                   background:
-                    "linear-gradient(165deg, rgba(30,27,75,0.85) 0%, rgba(49,46,129,0.80) 35%, rgba(124,45,18,0.70) 80%, rgba(154,52,18,0.65) 100%)",
+                    "linear-gradient(165deg, rgba(11,58,102,0.88) 0%, rgba(14,90,160,0.80) 35%, rgba(28,127,214,0.70) 80%, rgba(56,189,248,0.62) 100%)",
                 }}
               />
 
               {/* Content */}
               <div className="relative z-10">
                 <p className="text-sm md:text-base text-white/70 font-display italic">
-                  Rise Together, Grow Together
+                  Grow Deep, Fly High
                 </p>
                 <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                   당신의 첫 걸음을
                   <br />
-                  Step-Up과 함께
+                  ROOTIVE CLASS와 함께
                 </h2>
 
                 <div className="mt-8 mb-8 w-16 h-px bg-white/25 mx-auto" />
@@ -52,7 +52,7 @@ export function CtaSection() {
                 <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                   <Link
                     href="/about"
-                    className="rounded-full bg-white px-8 py-3.5 text-base font-bold text-[#312e81] shadow-lg transition-all hover:shadow-xl hover:bg-white/90 hover:-translate-y-0.5"
+                    className="rounded-full bg-white px-8 py-3.5 text-base font-bold text-accent-dark shadow-lg transition-all hover:shadow-xl hover:bg-white/90 hover:-translate-y-0.5"
                   >
                     무료 상담 신청
                   </Link>

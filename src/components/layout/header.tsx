@@ -50,7 +50,7 @@ export function Header() {
               scrolled ? "text-foreground" : "text-white",
             )}
           >
-            Step-Up
+            ROOTIVE CLASS
           </Link>
 
           <nav className="hidden items-center gap-8 md:flex">

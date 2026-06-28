@@ -35,7 +35,7 @@ export function SpecialPackageSection() {
         <FadeIn className="text-center">
           <SectionBadge>Special Gift Package</SectionBadge>
           <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
-            Step-Up만의 특별한 혜택
+            ROOTIVE CLASS만의 특별한 선물
           </h2>
         </FadeIn>
 
