@@ -71,7 +71,7 @@ export function InstructorsSection() {
           </p>
           <p className="mt-4 mx-auto max-w-2xl text-foreground-muted leading-relaxed">
             흔들리지 않는 성장은 내면의 근본을 들여다보는 것에서 시작됩니다. 내 안의 진짜 동기를 찾아내고,
-            스스로 깊어지고 당당히 날아오를 당신의 모든 순간에 DADA CLASS가 든든한 동반자가 되겠습니다.
+            스스로 깊어져 마침내 원하는 곳에 다다를 당신의 모든 순간에 DADA CLASS가 든든한 동반자가 되겠습니다.
           </p>
         </FadeIn>
 

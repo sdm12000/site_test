@@ -6,10 +6,10 @@ import { ArrowRight, BookOpen, Brain, Book, Star } from "lucide-react";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "DADA CLASS | Grow Deep, Fly High",
+    absolute: "DADA CLASS | Reach Deep, Reach Far",
   },
   description:
-    "유럽에서 시작된 글로벌 청년 교육 기관 QLI의 인문학 기반 교육 프로그램 DADA CLASS. 내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다.",
+    "유럽에서 시작된 글로벌 청년 교육 기관 QLI의 인문학 기반 교육 프로그램 DADA CLASS. 깊이 들어갈수록, 더 멀리 다다릅니다.",
   alternates: { canonical: "/" },
 };
 

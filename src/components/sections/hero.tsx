@@ -95,7 +95,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="font-display text-lg md:text-2xl text-white/75 tracking-wide font-medium"
         >
-          Grow Deep, Fly High
+          Reach Deep, Reach Far
         </motion.p>
 
         <motion.h1
@@ -113,7 +113,7 @@ export function HeroSection() {
           transition={{ duration: 0.8, delay: 0.7 }}
           className="mt-6 text-lg md:text-xl text-white/85 max-w-2xl mx-auto leading-relaxed"
         >
-          내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다
+          깊이 들어갈수록, 더 멀리 다다릅니다
         </motion.p>
 
         <motion.div

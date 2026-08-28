@@ -14,10 +14,10 @@ export function Footer() {
               QLI (Quantum Leap Institute)
             </p>
             <p className="mt-1 text-sm text-white/40">
-              Grow Deep, Fly High
+              Reach Deep, Reach Far
             </p>
             <p className="mt-3 text-xs text-white/30">
-              내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다.
+              깊이 들어갈수록, 더 멀리 다다릅니다.
             </p>
           </div>
 

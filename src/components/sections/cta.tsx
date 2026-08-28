@@ -35,7 +35,7 @@ export function CtaSection() {
               {/* Content */}
               <div className="relative z-10">
                 <p className="text-sm md:text-base text-white/70 font-display italic">
-                  Grow Deep, Fly High
+                  Reach Deep, Reach Far
                 </p>
                 <h2 className="mt-3 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-white">
                   당신의 첫 걸음을

@@ -49,9 +49,9 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
               내면의 단단한 중심을 세우다
             </h2>
             <p className="mt-4 mx-auto max-w-3xl text-foreground-muted leading-relaxed">
-              &lsquo;다다 클래스(Dada Class)&rsquo;는 보여주기식 성과보다 &lsquo;내면의 단단한 중심&rsquo;에
-              의미를 두며 스스로 움직이는 성장을 지향합니다. 청년들이 인문학을 통해 자신의 가능성과
-              진짜 동기(Motive)를 발견하고,{" "}
+              &lsquo;다다 클래스(DADA CLASS)&rsquo;는 보여주기식 성과보다 &lsquo;내면의 단단한 중심&rsquo;에
+              의미를 두며 스스로 움직이는 성장을 지향합니다. 청년들이 인문학을 통해 자기 자신에게
+              다다르는 길을 찾고,{" "}
               <strong className="text-foreground">작은 실천으로 삶의 변화를 만들어가도록</strong> 돕습니다.
             </p>
           </FadeIn>
@@ -94,7 +94,7 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
               기다립니다
             </p>
             <p className="mt-2 text-sm text-foreground-muted">
-              내면의 깊어진 뿌리는 곧, 더 높이 날아오를 나만의 원동력이 됩니다.
+              깊이 들어간 만큼, 더 멀리 다다를 수 있습니다.
               그리고 그 시작은 함께하는 모두를 성장하게 합니다.
             </p>
           </div>

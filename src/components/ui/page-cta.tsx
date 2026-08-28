@@ -34,7 +34,7 @@ export function PageCta({
               }}
             >
               <p className="text-sm md:text-base text-white/70 font-display">
-                Grow Deep, Fly High
+                Reach Deep, Reach Far
               </p>
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold text-white">
                 당신의 첫 걸음을
