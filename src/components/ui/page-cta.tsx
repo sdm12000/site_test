@@ -39,7 +39,7 @@ export function PageCta({
               <h2 className="mt-3 font-display text-3xl md:text-4xl font-bold text-white">
                 당신의 첫 걸음을
                 <br />
-                ROOTIVE CLASS와 함께
+                DADA CLASS와 함께
               </h2>
 
               <div className="mt-8 mb-8 w-16 h-px bg-white/25 mx-auto" />

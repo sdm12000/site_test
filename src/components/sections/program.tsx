@@ -44,12 +44,12 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
       <div className="mx-auto max-w-6xl px-6">
         {!hideHeader && (
           <FadeIn className="text-center">
-            <SectionBadge>ROOTIVE CLASS</SectionBadge>
+            <SectionBadge>DADA CLASS</SectionBadge>
             <h2 className="mt-4 font-display text-3xl md:text-4xl lg:text-5xl font-bold text-foreground">
               내면의 단단한 중심을 세우다
             </h2>
             <p className="mt-4 mx-auto max-w-3xl text-foreground-muted leading-relaxed">
-              &lsquo;루티브 클래스(Rootive Class)&rsquo;는 보여주기식 성과보다 &lsquo;내면의 단단한 중심&rsquo;에
+              &lsquo;다다 클래스(Dada Class)&rsquo;는 보여주기식 성과보다 &lsquo;내면의 단단한 중심&rsquo;에
               의미를 두며 스스로 움직이는 성장을 지향합니다. 청년들이 인문학을 통해 자신의 가능성과
               진짜 동기(Motive)를 발견하고,{" "}
               <strong className="text-foreground">작은 실천으로 삶의 변화를 만들어가도록</strong> 돕습니다.
@@ -88,7 +88,7 @@ export function ProgramSection({ hideHeader = false }: { hideHeader?: boolean })
         <FadeIn delay={0.6} className="mt-16 text-center">
           <div className="inline-block rounded-2xl bg-white/60 backdrop-blur-sm px-8 py-5 shadow-sm">
             <p className="text-lg md:text-xl text-foreground font-display font-bold">
-              루티브 클래스는 완벽한 사람이 아니라
+              다다 클래스는 완벽한 사람이 아니라
               <br className="md:hidden" />{" "}
               <span className="text-accent">&lsquo;움직일 준비가 된 사람&rsquo;</span>을
               기다립니다

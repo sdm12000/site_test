@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <Link href="/" className="font-display text-2xl font-bold text-white">
-              ROOTIVE CLASS
+              DADA CLASS
             </Link>
             <p className="mt-2 text-sm text-white/50">
               QLI (Quantum Leap Institute)
@@ -47,7 +47,7 @@ export function Footer() {
           <div>
             <p className="text-sm font-medium text-white/70 mb-4">문의</p>
             <p className="text-sm text-white/40 leading-relaxed">
-              ROOTIVE CLASS 프로그램에 대해 궁금한 점이 있으시면
+              DADA CLASS 프로그램에 대해 궁금한 점이 있으시면
               <br />
               언제든지 문의해 주세요.
             </p>

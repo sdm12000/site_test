@@ -104,7 +104,7 @@ export function HeroSection() {
           transition={{ duration: 0.9, delay: 0.4 }}
           className="mt-5 font-display text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white"
         >
-          ROOTIVE CLASS
+          DADA CLASS
         </motion.h1>
 
         <motion.p

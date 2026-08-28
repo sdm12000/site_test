@@ -11,9 +11,9 @@ const sora = Sora({
 });
 
 const SITE_URL = "https://site-test-red.vercel.app";
-const SITE_NAME = "ROOTIVE CLASS";
+const SITE_NAME = "DADA CLASS";
 const SITE_DESCRIPTION =
-  "내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다. QLI(Quantum Leap Institute)의 인문학 기반 교육 프로그램 ROOTIVE CLASS.";
+  "내면의 깊어진 뿌리, 더 높이 날아오를 나만의 원동력이 됩니다. QLI(Quantum Leap Institute)의 인문학 기반 교육 프로그램 DADA CLASS.";
 const OG_IMAGE = "/images/hero-bg.webp";
 
 export const metadata: Metadata = {
@@ -24,8 +24,8 @@ export const metadata: Metadata = {
   },
   description: SITE_DESCRIPTION,
   keywords: [
-    "ROOTIVE CLASS",
-    "루티브 클래스",
+    "DADA CLASS",
+    "다다 클래스",
     "QLI",
     "인문학",
     "청년 교육",

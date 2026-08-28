@@ -35,7 +35,7 @@ const coaches = [
     role: "수석 코치",
     photo: "/images/coaches/kim-boseop.webp",
     career: [
-      "현) QLI ROOTIVE CLASS 수석코치",
+      "현) QLI DADA CLASS 수석코치",
       "전) 포레스트버드 기획팀장",
       "전) 서울인재개발교육원 연구원",
       "전) 그라디언트 인재개발관리부서 팀장",
@@ -48,7 +48,7 @@ const coaches = [
     role: "코치",
     photo: "/images/coaches/choi-suji.webp",
     career: [
-      "현) ROOTIVE CLASS 코치팀",
+      "현) DADA CLASS 코치팀",
       "전) 서울시 광고마케팅 브랜딩 운영팀장",
       "전) 한국청소년정책연구원 청소년 지도사",
       "전) 브랜드랩 퍼스널 브랜딩 프로젝트 운영팀장",
@@ -71,7 +71,7 @@ export function InstructorsSection() {
           </p>
           <p className="mt-4 mx-auto max-w-2xl text-foreground-muted leading-relaxed">
             흔들리지 않는 성장은 내면의 근본을 들여다보는 것에서 시작됩니다. 내 안의 진짜 동기를 찾아내고,
-            스스로 깊어지고 당당히 날아오를 당신의 모든 순간에 ROOTIVE CLASS가 든든한 동반자가 되겠습니다.
+            스스로 깊어지고 당당히 날아오를 당신의 모든 순간에 DADA CLASS가 든든한 동반자가 되겠습니다.
           </p>
         </FadeIn>
 
